@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.curriculum {
+  background-color: #fff;
+
+  padding: 4rem;
+}
+
+
+.card-title {
+  font-size: 2rem;
+  font-weight:bold;
+  text-align: center;
+  
+  color: #4c4e61;
+
+
+}
+
+
+
+.card-row {
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+  width: 100wh;
+  /* height: 100vh; */
+  flex-wrap: wrap ;
+
+
+}
+.card-con {
+  width: fit-content;
+  height: 150px;
+  border: 1px solid rgba(187, 187, 187, .2);
+ /* border: 0.5px solid black; */
+  border-radius: 1rem;
+  padding: 1rem;
+  /* text-align: center; */
+  margin: 10px;
+  
+}
+
+.card-det {
+  text-align: left;
+ 
+  padding: 1rem;
+  color: white;
+}
+
+.card-det h2 {
+  color: gray;
+  
+  font-size: 1.5rem;
+}
+
+
+
+.card-con:hover {
+  box-shadow: 0px 20px 20px 0px rgba(220, 210, 191, 0.734);
+}
+
+
+
+
+
+@media (max-width: 450px) {
+    .card-con{
+        width: 95%;
+    }
+
+    .card-title{
+      font-size: 1.5rem;
+      text-align: left;
+    }
+
+    .card-det h2{
+      font-size: 1.3rem;
+      line-height: 150%;
+    }
+
+    .curriculum {
+      padding: 2rem;
+    }
+}
+@media (max-width:900px)  and (min-width :450px ) {
+    .card-con{
+        width: 70%;
+        text-align: center;
+    }
+}
+
+@media (min-width:900px) {
+    .card-con{
+      width: 30%;
+      margin:5vh ;
+    }
+}
+
