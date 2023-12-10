@@ -26,7 +26,7 @@
 .card-row {
   display: flex;
   justify-content: space-around;
-  /* align-items: center; */
+  align-items: center;
   width: 100wh;
   /* height: 100vh; */
   flex-wrap: wrap ;
@@ -34,9 +34,9 @@
 
 }
 .card-con {
-  width: fit-content;
-  height: 150px;
-  border: 1px solid rgba(187, 187, 187, .2);
+  width: 25rem;
+  height: 250px;
+  border: 1.5px solid rgba(187, 187, 187, .2);
  /* border: 0.5px solid black; */
   border-radius: 1rem;
   padding: 1rem;
@@ -48,14 +48,38 @@
 .card-det {
   text-align: left;
  
-  padding: 1rem;
   color: white;
 }
 
-.card-det h2 {
-  color: gray;
+.red {
   
-  font-size: 1.5rem;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+
+ 
+}
+#red-1 {
+  color: #4c4e61;
+  text-align: left;
+  padding-left: 1rem;
+    font-size: 1.2rem;
+}
+#red-2 {
+  color: #4c4e61;
+  text-align: right;
+  /* padding: 1rem 1rem 1rem 6rem; */
+    font-size: 1.2rem;
+    padding-right: 1rem;
+}
+
+
+.card-det h2 {
+  color:black;
+  
+  font-weight: 900;
+  font-size: 1.7rem;
+  padding: 2rem 1rem 0.5rem 1rem;
 }
 
 
@@ -96,8 +120,8 @@
 
 @media (min-width:900px) {
     .card-con{
-      width: 30%;
-      margin:5vh ;
+      width: 32%;
+      margin:2vh 1vh;
     }
 }
 

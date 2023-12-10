@@ -12,6 +12,8 @@
     /* background-color: #2f2f2f; */
     background-color: #1c1c1c;
     border-top: 1px solid #2f2f2f;
+
+    font-family: Gravitica Light Demo;
   }
   
   .footer > * {
@@ -117,10 +119,25 @@
   .heart {
     color: #2f2f2f;
   }
+
+
+  .footer-logo img {
+    width: 10rem ;
+    height: 4rem;
+    margin-top: 8px ;
+    
+  }
   
   @media screen and (min-width: 24.375em) {
     .legal .legal__links {
       margin-left: auto;
+    }
+
+    .footer-logo img {
+      width: 5rem ;
+      height: 2rem;
+      margin-top: 8px ;
+      
     }
   }
   
@@ -140,4 +157,40 @@
     .footer__nav {
       flex: 2 0px;
     }
+
+    .footer-logo img {
+      width: 10rem ;
+      height: 4rem;
+      margin-top: 8px ;
+      
+    }
+  }
+
+
+  @media (min-width:900px) {
+    .footer-logo img {
+      width: 10rem ;
+      height: 4rem;
+      margin-top: 8px ;
+      
+    }
+  }
+
+  @media (max-width:900px) and (min-width:480px) {
+    .footer-logo img {
+      width: 7rem ;
+      height: 3rem;
+      margin-top: 8px ;
+      
+    }
+    
+  }
+  @media (max-width:480px) {
+    .footer-logo img {
+      width: 5rem ;
+      height: 2rem;
+      margin-top: 8px ;
+      
+    }
+    
   }

@@ -1,9 +1,12 @@
 
-.beni{
+  @import url('https://fonts.googleapis.com/css2?family=Asap&family=Poppins:wght@100;400&display=swap');
+
+/* .beni{
+
 
     background: black;
     
-}
+} */
 .head p{
     width: 100%;
     margin-bottom: 2rem;
@@ -12,6 +15,9 @@
     font-weight: bold;
     color: #ffff;
     margin-top: 3rem;
+    font-family: 'Asap', sans-serif;
+    padding: 0rem 2rem;
+    line-height: 150%
 }
  span.text{
     background: linear-gradient(3deg,#00C6FF,#0072FF);
@@ -22,23 +28,40 @@
 }
 .benefits{
    
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
    margin: 1rem 2rem;
 
 }
 
+.benefit-row-1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction:; */
+}
+.benefit-row-2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction:; */
+}
+
 .benefit{
-    height:20rem;
-    width: 35rem;
-    margin: 2rem 2rem;
+    height: 19rem;
+    width: 40.35rem;
+    margin: 0.7rem 0.7rem;
     background-color: black;
     border: 0.1rem solid #ffff;
      border-radius: 2rem; 
     box-sizing: border-box;
-    padding: 1rem;
+    padding-left: 1rem;
+    padding-top: 3rem;
+    
     
 }
 .benefit:hover{
@@ -57,17 +80,21 @@
  .benefit h2{
     margin-left: 1.9rem;
     width: 80%;
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #ffff;
     line-height: 130%;
+    margin-bottom: 1rem;
+    font-family: 'Asap', sans-serif;
 }
 .benefit p{
     margin-left: 1.9rem;
     width: 80%;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     color: #b5b3b3;
     line-height: 130%;
+    font-family: 'Asap', sans-serif;
+/* font-family: 'Poppins', sans-serif; */
 }
 .benifit:hover{
    bottom : 0.6em;
@@ -78,7 +105,7 @@
 
 
 
-@media(max-width:700px) and (min-width:380px) {
+@media(max-width:1000px) and (min-width:380px) {
     .head p{
 
         text-align: center;
@@ -97,7 +124,7 @@
     .benefit{
         height:18rem;
         width: 19.5rem;
-        margin: auto;  
+         
         margin-top: 2rem; 
     } 
     .benefit h2{
@@ -111,12 +138,28 @@
         width: 84%;
         font-size: 1.2rem;
     }
+
+
+    /* .benefit-row-1 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;
+    }
+    .benefit-row-2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;
+    } */
 }
 @media(max-width:380px) {
     .head p{
 
         text-align: center;
-        font-size: 1.8rem; 
+        font-size: 1.5rem; 
         width: 100%;
     }
      .benefits{
@@ -133,22 +176,49 @@
         width: fit-content;
         /* width: 13rem; */
         /* margin: auto;   */
-        margin-top: 1rem; 
-        margin-right: 1rem;
+       padding: 1.8rem;
         
         
     } 
     .benefit h2{
-        width: 70%;
+        width: 90%;
         font-size: 1.2rem;
         align-items: center;
         justify-content: center;
         margin-left: 0.2rem;
+        text-align: center;
     }
     .benefit p{
         margin-left: 0.2rem;
-        width: 84%;
         font-size: 0.9rem;
+        text-align: left;
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px ) {
+
+
+    .benefit{
+        height:18rem;
+        width: 40rem;
+         
+        margin-top: 2rem; 
+    } 
+    .benefit-row-1 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       flex-wrap: wrap;
+    }
+    .benefit-row-2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-bottom: 2rem;
     }
 }
 

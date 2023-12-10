@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Poppins:wght@100;400&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -55,6 +57,8 @@ body .hero .hero-logo .hero-logo-1 img {
       font-style: normal;
       font-weight: 300;
       line-height: 150%;
+      font-family: 'Asap', sans-serif;
+   
   }
   
   
@@ -66,7 +70,7 @@ body .hero .hero-logo .hero-logo-1 img {
   .button a {
     width: 50px;
     
-    padding: 15px;
+    padding: 0.9rem 5.4rem;
     
     transform: translate(-50%, -50%);
     
@@ -81,29 +85,48 @@ body .hero .hero-logo .hero-logo-1 img {
     /* background: linear-gradient(90deg, rgba(0,198,255,0.9950105042016807) 2%, rgba(0,114,255,1) 100%); */
     
   /* background: linear-gradient(90deg, yellow,orange,red,violet,purple,blue,yellow); */
-  background: linear-gradient(
+  /* background: linear-gradient(
     90deg,
     rgba(0, 114, 255, 1),
     rgba(5, 152, 193, 0.995),
     
     purple,
     blue
-  );
+  ); */
+
+  transform: translate(-50%, -50%);
+  background: linear-gradient(90deg, #03a9f4, #f441a5,#03a9f4);
   background-size: 400%;
   border-radius: 10px;
   z-index: 1;
   animation: animate 8s linear infinite;
   }
   
-  @keyframes animate {
+  /* @keyframes animate {
     0% {
         background-position: 0%;
     }
     100% {
         background-position: 400%;
     }
-  }
+  } */
   
+
+
+  .befone a:hover{
+    animation: animate 8s linear infinite;
+}
+@keyframes animate
+{
+    0%
+    {
+        background-position: 0;
+    }
+    100%
+    {
+        background-position: 400%;
+    }
+}
   
   /* youtube video */
   
@@ -113,9 +136,11 @@ body .hero .hero-logo .hero-logo-1 img {
   
   .header-video iframe {
     border: 4px solid black;
-    width: 48vw;
+    width: 62vw;
     height: 42vh;
     margin-bottom: 0.5rem;
+    box-shadow: 0px 0px 20px 6px #282b2d;
+
   
     
   }
@@ -145,6 +170,7 @@ body .hero .hero-logo .hero-logo-1 img {
     }
     .button a{
    font-size: 1rem;
+   padding: 1rem 3rem;
     }
   
     .header-video{
@@ -169,7 +195,8 @@ body .hero .hero-logo .hero-logo-1 img {
   }
   @media (max-width:900px) and (min-width:480px) {
     .button a{
-    font-size: 1.5rem;
+    font-size: 1rem;
+    padding: 1rem 6rem;
     }
     .header-video {
   
@@ -187,8 +214,8 @@ body .hero .hero-logo .hero-logo-1 img {
    
   
     .header-video iframe {
-      width: fit-content;
-      height: fit-content;
+      width: 73vw;
+      height: 39vh;
     }
   
     .header-content h1 {

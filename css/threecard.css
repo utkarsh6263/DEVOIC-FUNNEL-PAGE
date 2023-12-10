@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Poppins:wght@100;400&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -8,14 +10,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 2rem;
+    margin: 2rem;
  
 
 }
 
 .first {
-    width: 40rem;
-    height: 30rem;
+    width: 31rem;
+    height: 22rem;
     background-color: rgb(41, 41, 41);
     border-radius: 2rem;
     border: 0.1rem solid rgba(255, 255, 255, .2);
@@ -30,8 +32,8 @@ body {
 }
 
 .sec {
-    width: 25rem;
-    height: 30rem;
+    width: 22rem;
+    height: 22rem;
     background-color: rgb(41, 41, 41);
     border-radius: 2rem;
     border: 0.1rem solid rgba(255, 255, 255, .2);
@@ -47,6 +49,7 @@ body {
     width: 70%;
     height: 0.01rem;
     background-color: rgb(255, 255, 255);
+    margin-top: 1.7rem;
 
 }
 
@@ -60,8 +63,8 @@ body {
 }
 
 .third {
-    width: 30rem;
-    height: 30rem;
+    width: 25rem;
+    height: 22rem;
     background-color: rgb(41, 41, 41);
     border-radius: 2rem;
     border: 0.1rem solid rgba(255, 255, 255, .2);
@@ -74,47 +77,62 @@ body {
 }
 
 .first h1 {
-
-    font-size: 1.8rem;
+margin-bottom: 1.8rem;
+    font-size: 1.9rem;
+    font-family: 'Asap', sans-serif;
 }
 
 .threecard-p {
 
-
+    font-family: 'Asap', sans-serif;
     font-style: normal;
     font-weight: 500;
    
-    line-height: 150%;
-    text-align:left;
+    line-height: 130%;
+    text-align:center;
     color: #BCBCBC;
 
-    max-width: 90%;
-    font-size: 1.5rem;
+padding: 0 1rem;
+    font-size: 1.4rem;
 }
-
-.first span {
-    font-size: 1.8rem;
-    margin-top: 2rem;
-    max-width: 95%;
+.span{
+    display: flex;
+    flex-direction: row;
+}
+#span1 {
+    font-size: 1.2rem;
+    margin:1.5rem;
     background: linear-gradient(160deg, #00C6FF, #0072FF);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-align: left;
+    
+}
+#span2 {
+    font-size: 1.2rem;
+    margin: 1.5rem ;
+    background: linear-gradient(160deg, #00C6FF, #0072FF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: right;
+
 }
 
 .sec h2 {
     text-align: center;
-    font-size: 2.4rem;
+    font-size: 1.7rem;
 }
 
 .sec h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
 
 }
 
 .sec h4 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-align: center;
     margin-top: -1.3rem;
     
@@ -127,12 +145,12 @@ body {
 .sec p {
     margin-top: -0.7rem;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .favourites {
     left: 39%;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
 }
 
 .favourites small {
@@ -163,7 +181,7 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1.5rem;
 
 }
 
@@ -171,17 +189,25 @@ body {
     display: flex;
     align-items: baseline;
     flex-direction: row;
-    width: 80%;
-    
+    width: 90%;
+    text-align: left;
     gap: 0.5rem;
 }
 
 .tick p {
+    font-family: 'Asap', sans-serif;
+    color: #BCBCBC;
 
 
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 
 }
+
+.threecard-left {
+    text-align: left;
+}
+
+
 
 .first:hover {
     border: 1px solid transparent;
@@ -204,33 +230,38 @@ body {
     transition: 0.4s;
 }
 
-@media(max-width:900px) {
+@media(max-width:1000px) and (min-width:480px){
     .threecard {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        margin: 0rem;
+        margin-top: 2rem;
     }
 
     .first {
-        width: 28rem;
-        height: 19rem;
+        width: 40rem;
+        height: 22rem;
+        margin: 0.7rem 2.7rem;
 
     }
 
     .sec {
-        width: 28rem;
-        height: 23rem;
+        width: 40rem;
+        height: 22rem;
+        margin: 0.7rem 2.7rem;
     }
 
     .third {
-        width: 28rem;
-        height: 16rem;
+        width: 40rem;
+        height: 22rem;
+        margin: 0.7rem 2.7rem;
     }
 
     .line {
         display: flex;
-        width: 14em;
+        width: 20rem;
         align-items: center;
         left: 3.5rem;
         top: -2.8rem;
@@ -238,7 +269,7 @@ body {
 
     .first h1 {
         text-align: center;
-        font-size: 1.3rem;
+        font-size: 2rem;
 
         top: -2.7rem;
     }
@@ -246,7 +277,7 @@ body {
     .first p {
         text-align: center;
         max-width: 94%;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
 
         top: -3rem;
     }
@@ -301,7 +332,7 @@ body {
     }
 
     .secline {
-        width: 13rem;
+        width: 20rem;
         align-items: center;
 
         left: 4.3rem;
@@ -313,4 +344,78 @@ body {
 
     }
 
+}
+
+@media (max-width:480px) {
+
+    .threecard {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 0rem;
+        margin-top: 2rem;
+    }
+    .span{
+        flex-direction: column;
+        font-size: 0.8rem;
+    }
+
+    .first h1 {
+       margin-bottom: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .first p {
+        font-size: 0.8rem;
+        max-width: 100%;
+    }
+
+    .first {
+        width: 90vw;
+        height: 52vh;
+    }
+    #span1 {
+        font-size: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    #span2 {
+        margin: 0rem;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .line {
+        width: 70%;
+    }
+
+    .sec {
+        width: 90vw;
+        height: 62vh;
+    }
+
+    .secline {
+        width: 70%;
+    }
+    .third {
+        height: 16rem;
+    }
+    .tick p {
+        font-size: 0.9rem;
+        line-height: 150%;
+    }
+    .sec h2 {
+        font-size: 1.7rem;
+    }
+    .sec p{
+        font-size: 1.4rem;
+    }
+
+    .sec h3 {
+        font-size: 1.3rem;
+    }
+    .sec h4 {
+        font-size: 1rem;
+    }
 }

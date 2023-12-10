@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Poppins:wght@100;400&display=swap');
 
 *{
     margin: 0;
@@ -5,6 +6,7 @@
     box-sizing: border-box;
 }
 body {
+    
 
     /* background-color: black; */
     font-family: 'Poppins', sans-serif;
@@ -14,14 +16,16 @@ body {
     width: 100%;
     height: 70px;
     backdrop-filter: blur(23.5px);
-    margin: 5px 0 30px;
+    margin: 20px 0px 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    
     background: linear-gradient(136deg, #6d88fa 0, #ff6a72 52.6%, #bdff9d 100%);
      background: linear-gradient(136deg,#00C6FF,#0072FF); 
+    padding-left: 2.5rem;
+    padding-right: 2rem;
+     
 }
 
 .timer {
@@ -52,6 +56,7 @@ body {
     line-height: 100%;
     margin: 2px;
     padding: 2px;
+    margin-bottom: 0px;
 
 
 
@@ -84,8 +89,9 @@ body {
 
 .timer-button .timer-content .text {
     color: #fff;
-    font-family: "Roboto Mono Regular";
-    font-size: 2rem;
+    font-family: 'Asap', sans-serif;
+   
+    font-size: 1.9rem;
     font-style: normal;
     font-weight: 400;
     line-height: 110%;
@@ -96,7 +102,7 @@ body {
 
 .clock span {
     color: #FFF;
-    font-family: 'Roboto Mono Regular';
+    font-family: 'Asap', sans-serif;
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;
@@ -113,18 +119,35 @@ body {
     
     .timer-button{
         flex-direction: column;
+        height: fit-content;
+        flex-direction: column;
+        gap: 0px;
+        padding-bottom: 0.4rem;
     }
    .timer-button .timer-content .text {
-    font-size: 1.4rem;
+    font-size: 1rem;
     text-align: center;
+    padding: 0.5rem 0.8rem 0 0.8rem;
+    gap: 0px;
    }
 
-.timer-button {
-    height: fit-content;
-    flex-direction: column;
-    padding: 2px;
-   
-}
+   .num p {
+    font-size: 1.2rem;
+    font-family: 'Asap', sans-serif;
+    
+   }
+
+   .num {
+    width: 40px;
+    height: 30px;
+   }
+
+   .colon{
+    font-size: 1.7rem;
+    margin-top: -0.3rem;
+   }
+
+
 } 
 
 
